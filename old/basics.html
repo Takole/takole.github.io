@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='fi'>
+<head>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />  
+    <title>Tapio Kolehma | HTML, CSS, Bootstrap</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/portfolioStyles.css">
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <div class="page-header"> 
+            <h1 class="textheader">Tapio Kolehma<br>HTML, CSS, Bootstrap</h1>
+        </div> 
+
+        <nav class="navbar navbar-expand-sm sticky-top">            
+            <button class="navbar-toggler btn-outline-secondary" data-toggle="collapse" data-target="#collapse_target">
+                <div class="symbol"> &#9776; </div>
+            </button>   
+
+            <div class="collapse navbar-collapse" id="collapse_target">                
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="vanha.html">Etusivulle</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#html">HTML</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scss">SCSS & Bootstrap</a>
+                    </li>
+                </ul>
+            </div>   
+        </nav>
+
+        <div class="album">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-12 box">
+                            <div class="card-body">
+                                <h4 id="html" class="card-text">HTML</h4>
+                                <a href="images/kuvankaappaus1.PNG"><img class="img-fluid rounded mx-auto" src="images/kuvankaappaus1.PNG" alt="kuvankaappaus1"></a><br><br>
+                                <a href="images/kuvankaappaus2.PNG"><img class="img-fluid rounded mx-auto" src="images/kuvankaappaus2.PNG" alt="kuvankaappaus2"></a>
+                                <p class="card-text">Oheinen kuva on ensimmäisenä vuotenani tekemä nettisivu. Sen alla oleva kuva on sen tyylimäärityksiä. Ideana on että siinä on erilaista mediaa näkyvillä, videota, audiota ja kuvia. <a target="_blank" href="https://student.labranet.jamk.fi/~N3423/web_tekniikat/harj7/harj_7.html" title="harjoitus7">Linkki kyseiselle sivulle</a></p><br>
+                                <p class="card-text">Tämä sivusto on myös itse koodattu HTML, CSS + Bootstrap tiedoilla ja pientä toiminnallisuutta saatu aikaan JavaScriptillä.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card mb-12 box">
+                                <div class="card-body">
+                                    <h4 id="scss" class="card-text">Sass/scss, Bootstrap</h4><br>
+                                    <a href="images/bootstrap.PNG"><img class="img-fluid" src="images/bootstrap.PNG" alt="harkkatyobootskuva"></a><br>
+                                    <p class="card-text">Myös sass/scss on tullut tutuksi ja se on mielestäni fiksu tapa. Koska pystyy muokkaamaan yhtä tiedostoa joka on pienempi, kuin että kaikki tyylit olisivat samassa css tiedostossa. Tähän sivustoon en ole sitä käyttänyt vaan tehnyt tämän tyylejä Bootstrapillä.<br> <a target="_blank" href="https://n3423.pages.labranet.jamk.fi/webvisualisointi/WVH11/WVH11.html">Web visualisoinnin harjoitustyö - toteutettu scss:llä</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>           
+
+        <footer class="footer mt-auto">Portfolio | 2023</footer>        
+        <script>
+            var activeNavItem = $('.nav-item');        
+            activeNavItem.click(function(){
+                activeNavItem.removeClass('active');
+                $(this).addClass('active');
+            });
+        </script>
+    </div>    
+</body>
+</html>
